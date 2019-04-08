@@ -10,7 +10,7 @@ Celery > 4.1 does not work with Windows 10 properly, so I installed eventlet in 
 
 run the celery worker in the terminal with
 
-<code>celery -A Weather  worker -l info -P eventlet</code>
+<code>celery -A Weather worker -l info -P eventlet</code>
 
 create superuser with
 

@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class LondonWeather(models.Model):
 
     """Here we are nly concerning ourselves with the first weather item available. Since there may be multiple types
@@ -38,4 +39,5 @@ class LondonWeather(models.Model):
     wind_speed = models.DecimalField(max_digits=5, decimal_places=2)
     wind_direction = models.DecimalField(max_digits=6, decimal_places=3)
     clouds = models.DecimalField(max_digits=3, decimal_places=0)
+
 
