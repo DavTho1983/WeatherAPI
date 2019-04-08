@@ -20,7 +20,7 @@ app.autodiscover_tasks()
 def setup_periodic_tasks(sender, **kwargs):
     # Gets London weather every hour.
 
-    sender.add_periodic_task(10.0, get_weather_task.s(), name='london_weather_test')
+    # sender.add_periodic_task(10.0, get_weather_task.s(), name='london_weather_test')
     sender.add_periodic_task(3600.0, get_weather_task.s(), name='london_weather')
 
 
