@@ -7,26 +7,56 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='LondonWeather',
+            name="LondonWeather",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('longitude', models.DecimalField(decimal_places=2, max_digits=5)),
-                ('latitude', models.DecimalField(decimal_places=2, max_digits=4)),
-                ('main_weather', models.CharField(choices=[('Thunderstorm', 'Thunderstorm'), ('Drizzle', 'Drizzle'), ('Rain', 'Rain'), ('Snow', 'Snow'), ('Mist', 'Mist'), ('Smoke', 'Smoke'), ('Haze', 'Haze'), ('Dust', 'Dust'), ('Fog', 'Fog'), ('Sand', 'Sand'), ('Ash', 'Ash'), ('Ash', 'Ash'), ('Squall', 'Squall'), ('Sand', 'Sand'), ('Sand', 'Sand'), ('Tornado', 'Tornado')], max_length=12)),
-                ('description', models.CharField(max_length=50)),
-                ('temperature', models.DecimalField(decimal_places=3, max_digits=6)),
-                ('pressure', models.DecimalField(decimal_places=2, max_digits=6)),
-                ('humidity', models.DecimalField(decimal_places=0, max_digits=3)),
-                ('min_temp', models.DecimalField(decimal_places=3, max_digits=6)),
-                ('max_temp', models.DecimalField(decimal_places=3, max_digits=6)),
-                ('wind_speed', models.DecimalField(decimal_places=2, max_digits=5)),
-                ('wind_direction', models.DecimalField(decimal_places=3, max_digits=6)),
-                ('clouds', models.DecimalField(decimal_places=0, max_digits=3)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("longitude", models.DecimalField(decimal_places=2, max_digits=5)),
+                ("latitude", models.DecimalField(decimal_places=2, max_digits=4)),
+                (
+                    "main_weather",
+                    models.CharField(
+                        choices=[
+                            ("Thunderstorm", "Thunderstorm"),
+                            ("Drizzle", "Drizzle"),
+                            ("Rain", "Rain"),
+                            ("Snow", "Snow"),
+                            ("Mist", "Mist"),
+                            ("Smoke", "Smoke"),
+                            ("Haze", "Haze"),
+                            ("Dust", "Dust"),
+                            ("Fog", "Fog"),
+                            ("Sand", "Sand"),
+                            ("Ash", "Ash"),
+                            ("Ash", "Ash"),
+                            ("Squall", "Squall"),
+                            ("Sand", "Sand"),
+                            ("Sand", "Sand"),
+                            ("Tornado", "Tornado"),
+                        ],
+                        max_length=12,
+                    ),
+                ),
+                ("description", models.CharField(max_length=50)),
+                ("temperature", models.DecimalField(decimal_places=3, max_digits=6)),
+                ("pressure", models.DecimalField(decimal_places=2, max_digits=6)),
+                ("humidity", models.DecimalField(decimal_places=0, max_digits=3)),
+                ("min_temp", models.DecimalField(decimal_places=3, max_digits=6)),
+                ("max_temp", models.DecimalField(decimal_places=3, max_digits=6)),
+                ("wind_speed", models.DecimalField(decimal_places=2, max_digits=5)),
+                ("wind_direction", models.DecimalField(decimal_places=3, max_digits=6)),
+                ("clouds", models.DecimalField(decimal_places=0, max_digits=3)),
             ],
-        ),
+        )
     ]

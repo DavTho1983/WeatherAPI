@@ -6,5 +6,13 @@ from .models import LondonWeather
 @admin.register(LondonWeather)
 class LondonWeatherAdmin(admin.ModelAdmin):
     en_formats.DATETIME_FORMAT = "d M Y H:i:s"
-    list_display = ('datetime', 'longitude', 'latitude', 'main_weather', 'description', 'temperature', 'clouds')
-    ordering = ['id']
+    list_display = (
+        "datetime",
+        "longitude",
+        "latitude",
+        "main_weather",
+        "description",
+        "temperature",
+        "clouds",
+    )
+    ordering = ["id"]
