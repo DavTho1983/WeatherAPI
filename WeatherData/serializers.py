@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from django_celery_results.models import TaskResult
+from .models import LondonWeather
 
 class ResultSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TaskResult
+        model = LondonWeather
         fields = '__all__'

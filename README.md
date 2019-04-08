@@ -8,7 +8,7 @@ Celery > 4.1 does not work with Windows 10 properly, so I installed eventlet in 
 <code>pip install eventlet</code>
 
 
-run the celery worker in the terminal with
+run the celery worker in the terminal from the same directory as celery.py with
 
 <code>celery -A Weather worker -l info -P eventlet</code>
 
@@ -20,6 +20,6 @@ run development server with
 
 <code>python manage.py runserver</code>
 
-start celerybeat scheduler with:
+start celerybeat scheduler in the same directory as celery.py with:
 
 <code>celery -A Weather  beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler</code>

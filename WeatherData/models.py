@@ -27,6 +27,7 @@ class LondonWeather(models.Model):
         ('Tornado', 'Tornado'),
     )
 
+    datetime = models.DateTimeField(auto_now_add=True)
     longitude = models.DecimalField(max_digits=5, decimal_places=2)  # from -180.00 to 180.00
     latitude = models.DecimalField(max_digits=4, decimal_places=2)  # from -90.00 to 90
     main_weather = models.CharField(max_length=12, choices=CONDITIONS)
