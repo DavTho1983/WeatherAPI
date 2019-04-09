@@ -20,7 +20,7 @@ Celery > 4.1 does not work with Windows 10 properly, so I used eventlet.
 <h3>Cloning the repo</h3>
 In a Mac terminal or Windows Powershell, cd into the directory where you want to put the project and use:
 
-    git clone https://github.com/DavTho1983/Weather.git
+    git clone https://github.com/DavTho1983/WeatherAPI.git
     
 <p>Now immediately cd into Weather</p>
 
