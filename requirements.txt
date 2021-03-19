@@ -9,7 +9,7 @@ django-celery-results==1.0.4
 django-cors-headers==2.5.2
 django-extensions==2.1.6
 django-timezone-field==3.0
-djangorestframework==3.9.2
+djangorestframework==3.11.2
 dnspython==1.16.0
 eventlet==0.24.1
 greenlet==0.4.15
